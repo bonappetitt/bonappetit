@@ -1,47 +1,615 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bon Appetit Recipe Collection</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fafafa;
-      color: #333;
-    }
-    header {
-      background-color: #8ecac7;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-    }
-    footer {
-      background-color: #eee;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Bon Appetit Recipe Collection</h1>
-    <p>Explore Vegan, Budget, Cultural, Dessert, and Lifestyle-Based Recipes</p>
-  </header>
-  <footer>
-    &copy; 2025 Bon Appetit. All rights reserved.
-  </footer>
-</body>
-</html>
+<script>
+// --- Add-on batch #1 (12 precise recipes) ---
+recipes.push(
+  {
+    title: "Falafel Bowls with Tahini–Lemon Sauce",
+    meal: "Lunch",
+    servings: 4,
+    prepTime: "20 minutes (+30 minutes chilling)",
+    cookTime: "25 minutes",
+    image: "https://images.unsplash.com/photo-1604908176997-431ca1b202bb?auto=format&fit=crop&w=1200&q=60",
+    description: "Oven-baked herb falafel on fluffy rice with crisp veg and a tangy tahini drizzle.",
+    ingredients: [
+      "1 (15 oz / 425 g) can chickpeas, drained and rinsed, patted very dry",
+      "1/2 small red onion, roughly chopped (1/3 cup / 50 g)",
+      "2 garlic cloves",
+      "1/2 cup (12 g) fresh parsley leaves (loosely packed)",
+      "1/4 cup (6 g) fresh cilantro leaves",
+      "1 tbsp (15 ml) lemon juice",
+      "1 tsp ground cumin",
+      "1/2 tsp ground coriander",
+      "1/2 tsp fine sea salt",
+      "1/4 tsp baking powder",
+      "3 tbsp (24 g) chickpea flour (or AP flour)",
+      "2 tbsp (30 ml) olive oil (divided)",
+      "BOWL: 2 cups cooked rice or quinoa, 1 cup cucumber diced, 1 cup cherry tomatoes halved, 1/4 cup red onion thinly sliced",
+      "SAUCE: 1/3 cup (80 ml) tahini, 2 tbsp (30 ml) lemon juice, 1 small garlic clove grated, 3–5 tbsp warm water, pinch salt"
+    ],
+    materials: [
+      "Food processor",
+      "Rimmed baking sheet + parchment",
+      "Measuring cups and spoons",
+      "Mixing bowls",
+      "Spatula",
+      "Chef's knife and cutting board"
+    ],
+    alternatives: [
+      "Pan-fry falafel in 2 tbsp oil instead of baking",
+      "Use all parsley if cilantro is unavailable",
+      "Gluten-free: ensure chickpea flour; serve over greens instead of rice if desired"
+    ],
+    tips: "Dry chickpeas thoroughly; moisture makes patties loose. Chill mixture to help it firm.",
+    steps: [
+      "Heat oven to 425°F (220°C). Line a baking sheet with parchment.",
+      "In a food processor pulse onion and garlic to a coarse mince (10–12 pulses). Add parsley and cilantro; pulse 6–8 times to chop fine (do not puree).",
+      "Add chickpeas, lemon juice, cumin, coriander, salt, and baking powder. Pulse in short bursts until mixture holds when pressed but still has small bits—avoid a paste.",
+      "Sprinkle in chickpea flour; pulse 3–4 times to combine. Transfer bowl to fridge 20–30 minutes to firm.",
+      "Brush parchment with 1 tbsp oil. Scoop mixture into 12 balls (~2 tbsp each). Flatten slightly (3/4 in / 2 cm thick). Brush tops with remaining 1 tbsp oil.",
+      "Bake 22–25 minutes, flipping at 12 minutes, until deep golden with crisp edges.",
+      "Whisk tahini, lemon, garlic, and 3 tbsp warm water until creamy. Thin 1 tbsp water at a time to a pourable sauce; salt to taste.",
+      "Assemble bowls: add warm rice, cucumbers, tomatoes, and onion. Top with 3 falafel each and drizzle generously with sauce. Serve immediately."
+    ]
+  },
+  {
+    title: "Hearty Minestrone with Beans & Pasta",
+    meal: "Dinner",
+    servings: 6,
+    prepTime: "15 minutes",
+    cookTime: "35 minutes",
+    image: "https://images.unsplash.com/photo-1526318472351-c75fcf070305?auto=format&fit=crop&w=1200&q=60",
+    description: "Classic vegetable soup loaded with beans, pasta, and greens in a tomato-herb broth.",
+    ingredients: [
+      "2 tbsp (30 ml) olive oil",
+      "1 medium yellow onion, diced (1 cup / 140 g)",
+      "2 carrots, diced (1 cup / 130 g)",
+      "2 celery ribs, diced (1 cup / 110 g)",
+      "3 garlic cloves, minced",
+      "1 tsp dried oregano",
+      "1/2 tsp dried thyme",
+      "1/2 tsp red pepper flakes (optional)",
+      "1 tbsp (16 g) tomato paste",
+      "1 can (14.5 oz / 410 g) diced tomatoes",
+      "6 cups (1.4 L) vegetable broth",
+      "1 can (15 oz / 425 g) cannellini or kidney beans, rinsed",
+      "1 small zucchini, diced",
+      "1 cup (120 g) small pasta (ditalini or elbows)",
+      "2 cups (60 g) chopped kale or spinach",
+      "1 tsp fine sea salt + black pepper to taste",
+      "1 tbsp (15 ml) red wine vinegar (finish)"
+    ],
+    materials: [
+      "6–7 qt (6–7 L) Dutch oven",
+      "Wooden spoon",
+      "Ladle",
+      "Measuring cups and spoons"
+    ],
+    alternatives: [
+      "Gluten-free pasta works; adjust cook time",
+      "Use chickpeas in place of cannellini",
+      "Add 1 zucchini and omit pasta for a lower-carb bowl"
+    ],
+    tips: "Cook pasta directly in the soup so starch slightly thickens the broth.",
+    steps: [
+      "Heat oil in Dutch oven over medium. Sauté onion, carrot, and celery 6–7 minutes until softened.",
+      "Add garlic, oregano, thyme, and red pepper flakes; cook 30 seconds. Stir in tomato paste; cook 1 minute until darkened.",
+      "Pour in tomatoes with juices and vegetable broth; bring to a gentle boil.",
+      "Add beans and zucchini; simmer 5 minutes. Stir in pasta and 1 tsp salt; simmer 8–10 minutes until pasta is al dente.",
+      "Fold in kale/spinach; cook 1–2 minutes until wilted. Off heat, stir in vinegar, taste, and adjust seasoning. Ladle into bowls and serve."
+    ]
+  },
+  {
+    title: "Ultra-Creamy Cashew Mac & ‘Cheese’",
+    meal: "Dinner",
+    servings: 4,
+    prepTime: "15 minutes (+30 minutes soaking if needed)",
+    cookTime: "20 minutes",
+    image: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=1200&q=60",
+    description: "Silky cashew-based sauce clings to elbow macaroni with a gentle tang and savory depth.",
+    ingredients: [
+      "10 oz (285 g) elbow macaroni",
+      "1 cup (140 g) raw cashews, soaked 30 minutes in hot water and drained",
+      "1 1/4 cups (300 ml) unsweetened oat milk",
+      "3 tbsp (24 g) nutritional yeast",
+      "1 tbsp (15 ml) lemon juice",
+      "1 tsp Dijon mustard",
+      "1/2 tsp garlic powder",
+      "1/2 tsp onion powder",
+      "3/4 tsp fine sea salt",
+      "1 tbsp (14 g) vegan butter (optional for gloss)"
+    ],
+    materials: [
+      "Large pot + colander",
+      "High-speed blender",
+      "Saucepan",
+      "Measuring cups and spoons",
+      "Rubber spatula"
+    ],
+    alternatives: [
+      "Use sunflower seeds instead of cashews (soak 20 minutes)",
+      "Gluten-free pasta works",
+      "Add smoked paprika or hot sauce for kick"
+    ],
+    tips: "Blend the sauce 60–90 seconds until completely silky; graininess means more blending or more liquid.",
+    steps: [
+      "Cook macaroni in salted boiling water until al dente. Reserve 1/2 cup pasta water; drain.",
+      "Blend soaked cashews, oat milk, nutritional yeast, lemon juice, Dijon, garlic powder, onion powder, and salt until very smooth.",
+      "Pour sauce into a saucepan over medium heat; cook 2–3 minutes, stirring, until it gently bubbles and thickens. If too thick, whisk in splashes of pasta water.",
+      "Stir in vegan butter if using. Add drained pasta and toss to coat. Serve hot."
+    ]
+  },
+  {
+    title: "Vegetable Paella (One-Pan)",
+    meal: "Dinner",
+    servings: 4,
+    prepTime: "15 minutes",
+    cookTime: "30 minutes",
+    image: "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=1200&q=60",
+    description: "Saffron-tinged rice studded with peppers, artichokes, peas, and tomatoes with a prized socarrat crust.",
+    ingredients: [
+      "2 tbsp (30 ml) olive oil",
+      "1 small onion, finely chopped",
+      "1 red bell pepper, sliced into thin strips",
+      "2 garlic cloves, minced",
+      "1 1/2 cups (300 g) Spanish bomba or medium-grain rice",
+      "1 tsp smoked paprika",
+      "1 pinch saffron threads (soaked in 2 tbsp warm water)",
+      "3 1/4 cups (770 ml) vegetable broth",
+      "1 can (14 oz / 400 g) artichoke hearts, quartered and drained",
+      "3/4 cup (100 g) frozen peas",
+      "1 cup (240 g) cherry tomatoes, halved",
+      "1 tsp salt + black pepper",
+      "Lemon wedges to serve"
+    ],
+    materials: [
+      "12–13 in (30–33 cm) wide skillet or paella pan",
+      "Wooden spoon",
+      "Measuring cups and spoons"
+    ],
+    alternatives: [
+      "Substitute short-grain rice if bomba unavailable",
+      "Add roasted mushrooms for extra umami",
+      "Use a pinch of turmeric if skipping saffron"
+    ],
+    tips: "Do not stir after broth is added—this promotes an even layer and a crispy socarrat.",
+    steps: [
+      "Heat oil over medium; sauté onion and pepper 5 minutes until softened.",
+      "Add garlic; cook 30 seconds. Stir in rice and smoked paprika; toast 1–2 minutes until coated and slightly translucent at edges.",
+      "Pour in broth, saffron with soaking water, artichokes, peas, tomatoes, salt, and pepper. Spread rice evenly; do not stir.",
+      "Bring to a steady simmer; cook uncovered 18–20 minutes until most liquid is absorbed and rice is tender.",
+      "Increase heat to medium-high for 1–2 minutes to form socarrat (listen for gentle crackling). Remove from heat, rest 5 minutes, then serve with lemon."
+    ]
+  },
+  {
+    title: "Teriyaki Eggplant & Broccoli Bowls",
+    meal: "Dinner",
+    servings: 3,
+    prepTime: "15 minutes",
+    cookTime: "20 minutes",
+    image: "https://images.unsplash.com/photo-1625944528514-3cc3a9d9f7b7?auto=format&fit=crop&w=1200&q=60",
+    description: "Sautéed eggplant cubes and crisp broccoli in a glossy homemade teriyaki over steamed rice.",
+    ingredients: [
+      "1 tbsp (15 ml) neutral oil",
+      "1 medium eggplant, 3/4 in (2 cm) cubes",
+      "2 cups (140 g) small broccoli florets",
+      "2 scallions, sliced (whites and greens separated)",
+      "TERIYAKI: 1/3 cup (80 ml) soy sauce, 3 tbsp (45 ml) water, 1 1/2 tbsp (22 ml) maple syrup, 1 tbsp (15 ml) rice vinegar, 1 tsp grated ginger, 1 small garlic clove minced, 1 tbsp cornstarch mixed with 2 tbsp water",
+      "2 cups hot cooked rice, for serving"
+    ],
+    materials: [
+      "12 in (30 cm) nonstick skillet or wok",
+      "Small bowl + whisk",
+      "Measuring spoons",
+      "Tongs"
+    ],
+    alternatives: [
+      "Use zucchini in place of eggplant",
+      "Gluten-free: tamari instead of soy sauce",
+      "Add baked tofu for extra protein"
+    ],
+    tips: "Brown eggplant first so it turns silky inside while holding shape.",
+    steps: [
+      "Heat oil in skillet over medium-high. Add eggplant; cook 6–7 minutes, stirring occasionally, until browned and softening.",
+      "Add broccoli and scallion whites; cook 3–4 minutes until bright green and crisp-tender.",
+      "Whisk soy sauce, water, maple, vinegar, ginger, and garlic. Stir cornstarch slurry into the mixture.",
+      "Pour sauce into pan; toss constantly 60–90 seconds until thick and glossy.",
+      "Serve over hot rice; sprinkle with scallion greens."
+    ]
+  },
+  {
+    title: "Roasted Tomato–Basil Soup",
+    meal: "Lunch",
+    servings: 4,
+    prepTime: "10 minutes",
+    cookTime: "35 minutes",
+    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1200&q=60",
+    description: "Slow-roasted tomatoes blended silky with garlic, onion, and basil for a cozy soup.",
+    ingredients: [
+      "2 lb (900 g) ripe tomatoes, halved",
+      "1 small yellow onion, thickly sliced",
+      "4 garlic cloves, peeled",
+      "2 tbsp (30 ml) olive oil",
+      "1 tsp salt + black pepper",
+      "2 cups (480 ml) vegetable broth",
+      "1/4 cup (10 g) fresh basil leaves",
+      "1 tsp sugar (optional, to balance acidity)"
+    ],
+    materials: [
+      "Baking sheet",
+      "Blender",
+      "Medium pot",
+      "Ladle"
+    ],
+    alternatives: [
+      "Use canned fire-roasted tomatoes (2 × 14.5 oz) and skip roasting; simmer 10 minutes",
+      "Stir in 1/2 cup coconut milk for creaminess"
+    ],
+    tips: "Roasting concentrates tomato sweetness; don’t skip the caramelization.",
+    steps: [
+      "Heat oven to 425°F (220°C). Toss tomatoes, onion, and garlic with olive oil, 1 tsp salt, and pepper on a baking sheet; roast 25–30 minutes until edges char.",
+      "Transfer roasted veg and any juices to blender with broth and basil; blend until smooth.",
+      "Pour into pot; simmer 5 minutes. Taste and add sugar if needed and additional salt/pepper. Serve hot."
+    ]
+  },
+  {
+    title: "Sticky Orange Cauliflower",
+    meal: "Dinner",
+    servings: 4,
+    prepTime: "15 minutes",
+    cookTime: "25 minutes",
+    image: "https://images.unsplash.com/photo-1604908553499-1f3bfe9ed1e4?auto=format&fit=crop&w=1200&q=60",
+    description: "Crispy baked cauliflower florets tossed in a bright, sticky orange–ginger glaze.",
+    ingredients: [
+      "1 medium head cauliflower, cut into 1 1/2 in (4 cm) florets",
+      "3/4 cup (90 g) cornstarch",
+      "1/2 tsp salt",
+      "3/4 cup (180 ml) water",
+      "1 tbsp (15 ml) neutral oil",
+      "SAUCE: 1/2 cup (120 ml) orange juice, 1 tbsp orange zest, 2 tbsp soy sauce, 2 tbsp maple syrup, 1 tbsp rice vinegar, 1 tsp grated ginger, 1 garlic clove minced, 1 tbsp cornstarch + 2 tbsp water",
+      "Cooked rice and sesame seeds to serve"
+    ],
+    materials: [
+      "Large bowl",
+      "Baking sheet + parchment",
+      "Small saucepan",
+      "Whisk",
+      "Tongs"
+    ],
+    alternatives: [
+      "Air fryer: 390°F (200°C) 12–14 minutes, shake halfway",
+      "Gluten-free tamari",
+      "Add steamed broccoli to the sauce for extra veg"
+    ],
+    tips: "Batter should resemble thin pancake batter—adjust with splashes of water for even coating.",
+    steps: [
+      "Heat oven to 450°F (232°C). Whisk cornstarch, salt, and water into a smooth batter; stir in 1 tbsp oil.",
+      "Toss cauliflower florets in batter; lift each piece to let excess drip. Arrange on parchment-lined sheet.",
+      "Bake 20–22 minutes until crisp and lightly golden, flipping at 12 minutes.",
+      "Meanwhile whisk sauce ingredients (except cornstarch slurry) in a saucepan; bring to a simmer. Stir in slurry; cook 1–2 minutes until glossy and thick.",
+      "Toss hot cauliflower in sauce. Serve immediately over rice; sprinkle sesame seeds."
+    ]
+  },
+  {
+    title: "Moroccan Chickpea & Apricot Stew",
+    meal: "Dinner",
+    servings: 4,
+    prepTime: "15 minutes",
+    cookTime: "30 minutes",
+    image: "https://images.unsplash.com/photo-1546549039-49d4c8e3ed4a?auto=format&fit=crop&w=1200&q=60",
+    description: "Warming spices, tomatoes, and dried apricots create a sweet-savory tagine-style stew.",
+    ingredients: [
+      "1 tbsp (15 ml) olive oil",
+      "1 small onion, diced",
+      "2 garlic cloves, minced",
+      "1 tbsp tomato paste",
+      "1 tsp ground cumin",
+      "1 tsp ground coriander",
+      "1/2 tsp cinnamon",
+      "1/4 tsp cayenne (optional)",
+      "1 can (28 oz / 800 g) crushed tomatoes",
+      "1 can (15 oz / 425 g) chickpeas, rinsed",
+      "1/2 cup (75 g) dried apricots, quartered",
+      "1 1/4 cups (300 ml) vegetable broth",
+      "1/2 tsp salt + pepper",
+      "2 tbsp chopped cilantro",
+      "Cooked couscous, to serve"
+    ],
+    materials: [
+      "4–5 qt pot",
+      "Wooden spoon",
+      "Knife and cutting board",
+      "Measuring spoons"
+    ],
+    alternatives: [
+      "Use golden raisins instead of apricots",
+      "Add 1 diced carrot with onion",
+      "For richer body, stir in 2 tbsp almond butter at the end"
+    ],
+    tips: "Bloom spices in oil and tomato paste to unlock deeper flavor.",
+    steps: [
+      "Heat oil over medium; sauté onion 5 minutes until translucent. Add garlic; cook 30 seconds.",
+      "Stir in tomato paste, cumin, coriander, cinnamon, and cayenne; cook 1 minute until fragrant.",
+      "Add crushed tomatoes, chickpeas, apricots, broth, salt, and pepper. Simmer 18–22 minutes, partially covered, until slightly thickened.",
+      "Stir in cilantro. Serve over couscous."
+    ]
+  },
+  {
+    title: "Savory Mushroom Steel-Cut Oats",
+    meal: "Breakfast",
+    servings: 3,
+    prepTime: "10 minutes",
+    cookTime: "25 minutes",
+    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=60",
+    description: "Creamy steel-cut oats cooked in broth with sautéed mushrooms, spinach, and scallions.",
+    ingredients: [
+      "1 tbsp (15 ml) olive oil",
+      "8 oz (225 g) cremini mushrooms, sliced",
+      "3 scallions, sliced (whites and greens separated)",
+      "1 cup (160 g) steel-cut oats",
+      "3 cups (720 ml) low-sodium vegetable broth",
+      "1 cup (240 ml) water",
+      "1/2 tsp salt",
+      "2 cups (60 g) baby spinach",
+      "Black pepper to taste"
+    ],
+    materials: [
+      "3–4 qt saucepan",
+      "Wooden spoon",
+      "Measuring cups",
+      "Knife and cutting board"
+    ],
+    alternatives: [
+      "Use rolled oats (cook ~8 minutes; reduce liquid to 3 cups total)",
+      "Stir in 1 tbsp nutritional yeast for cheesy flavor",
+      "Top with chili oil for heat"
+    ],
+    tips: "Toast oats briefly in the pan for a nuttier flavor and better texture.",
+    steps: [
+      "Heat oil in saucepan over medium. Sauté mushrooms and scallion whites 5–6 minutes until browned. Transfer half for topping if desired.",
+      "Add oats; toast 1 minute, stirring.",
+      "Pour in broth and water; add 1/2 tsp salt. Bring to simmer; cook uncovered 18–22 minutes, stirring occasionally, until creamy and tender with slight bite.",
+      "Fold in spinach until wilted (30–45 seconds). Season with pepper; ladle into bowls and top with reserved mushrooms and scallion greens."
+    ]
+  },
+  {
+    title: "Berry Almond Baked Oatmeal",
+    meal: "Breakfast",
+    servings: 6,
+    prepTime: "10 minutes",
+    cookTime: "35 minutes",
+    image: "https://images.unsplash.com/photo-1509460913899-35e7e3c1d132?auto=format&fit=crop&w=1200&q=60",
+    description: "Golden-topped baked oats studded with mixed berries and sliced almonds—sliceable and meal-prep friendly.",
+    ingredients: [
+      "2 cups (200 g) rolled oats",
+      "1/2 cup (70 g) sliced almonds",
+      "1/3 cup (65 g) brown sugar or coconut sugar",
+      "1 tsp baking powder",
+      "1/2 tsp cinnamon",
+      "1/4 tsp salt",
+      "2 cups (480 ml) unsweetened almond milk",
+      "1 tsp vanilla extract",
+      "2 tbsp (30 ml) melted coconut oil",
+      "1 1/2 cups (200 g) mixed berries (fresh or frozen)"
+    ],
+    materials: [
+      "Large mixing bowl",
+      "8×8 in (20×20 cm) baking dish",
+      "Whisk",
+      "Measuring cups and spoons"
+    ],
+    alternatives: [
+      "Use walnuts or pecans instead of almonds",
+      "Swap berries for diced apples and add 1/4 tsp nutmeg",
+      "Maple syrup (1/3 cup) can replace sugar"
+    ],
+    tips: "Let cool 10 minutes before slicing—this helps clean squares.",
+    steps: [
+      "Heat oven to 375°F (190°C). Grease baking dish lightly.",
+      "In bowl, combine oats, almonds, sugar, baking powder, cinnamon, and salt.",
+      "Whisk milk, vanilla, and melted coconut oil in a separate bowl. Pour into dry ingredients; stir to combine. Fold in berries gently.",
+      "Spread mixture in dish; bake 30–35 minutes until set and golden at edges. Cool 10 minutes; slice and serve."
+    ]
+  },
+  {
+    title: "Chickpea ‘Tuna’ Salad Sandwiches",
+    meal: "Lunch",
+    servings: 4,
+    prepTime: "15 minutes",
+    cookTime: "0 minutes",
+    image: "https://images.unsplash.com/photo-1553909489-c8faaa0bc3a9?auto=format&fit=crop&w=1200&q=60",
+    description: "Creamy, crunchy chickpea mash seasoned like classic deli tuna salad—great for sandwiches or lettuce wraps.",
+    ingredients: [
+      "1 (15 oz / 425 g) can chickpeas, rinsed and drained",
+      "1/4 cup (60 ml) vegan mayonnaise",
+      "1 tbsp (15 ml) Dijon mustard",
+      "1 tbsp (15 ml) lemon juice",
+      "1 small celery rib, finely diced (1/3 cup / 40 g)",
+      "2 tbsp (20 g) red onion, finely diced",
+      "1 tbsp capers, chopped (optional)",
+      "1/4 tsp garlic powder",
+      "1/4 tsp black pepper",
+      "1/4 tsp salt or to taste",
+      "8 slices bread or 4 large lettuce leaves",
+      "Lettuce and tomato slices for serving"
+    ],
+    materials: [
+      "Mixing bowl",
+      "Fork or potato masher",
+      "Measuring spoons",
+      "Knife and cutting board"
+    ],
+    alternatives: [
+      "Use mashed white beans instead of chickpeas",
+      "Swap mayo with 3 tbsp hummus + 1 tsp olive oil",
+      "Add 1 tbsp nori flakes for a sea-like note"
+    ],
+    tips: "Mash chickpeas until some remain chunky for better texture.",
+    steps: [
+      "In a bowl, mash chickpeas with a fork until mostly broken with some small chunks.",
+      "Stir in mayo, Dijon, lemon juice, celery, onion, capers, garlic powder, pepper, and salt until evenly combined.",
+      "Taste and adjust seasoning. Spoon onto bread with lettuce and tomato, or into lettuce leaves. Serve immediately."
+    ]
+  },
+  {
+    title: "Sheet-Pan Fajita Veggies with Lime Crema",
+    meal: "Dinner",
+    servings: 4,
+    prepTime: "10 minutes",
+    cookTime: "20 minutes",
+    image: "https://images.unsplash.com/photo-1552332386-93d1fa8b5c37?auto=format&fit=crop&w=1200&q=60",
+    description: "Roasted peppers, onions, and mushrooms with warm spices, stuffed in tortillas and topped with a tangy crema.",
+    ingredients: [
+      "2 bell peppers (any color), 1/2 in (1.3 cm) strips",
+      "1 large red onion, 1/2 in (1.3 cm) slices",
+      "8 oz (225 g) mushrooms, sliced",
+      "2 tbsp (30 ml) olive oil",
+      "1 tsp chili powder",
+      "1 tsp smoked paprika",
+      "1/2 tsp ground cumin",
+      "1/2 tsp salt + pepper",
+      "8 small flour or corn tortillas",
+      "CREMA: 1/3 cup (80 ml) vegan yogurt, 1 tbsp lime juice, 1/4 tsp salt"
+    ],
+    materials: [
+      "Rimmed sheet pan",
+      "Mixing bowl",
+      "Measuring spoons",
+      "Small bowl for crema",
+      "Tongs"
+    ],
+    alternatives: [
+      "Add strips of baked tofu",
+      "Use zucchini instead of mushrooms",
+      "Gluten-free: corn tortillas"
+    ],
+    tips: "Spread vegetables in a single layer for proper charring.",
+    steps: [
+      "Heat oven to 450°F (232°C). Toss peppers, onion, and mushrooms with oil, chili powder, paprika, cumin, salt, and pepper. Spread on sheet pan.",
+      "Roast 16–20 minutes, stirring once halfway, until edges char and vegetables are tender.",
+      "Whisk crema ingredients until smooth. Warm tortillas briefly.",
+      "Fill tortillas with roasted veg; drizzle with lime crema."
+    ]
+  },
+  {
+    title: "Mediterranean Stuffed Eggplant",
+    meal: "Dinner",
+    servings: 4,
+    prepTime: "15 minutes",
+    cookTime: "40 minutes",
+    image: "https://images.unsplash.com/photo-1516715094483-75da7dee9756?auto=format&fit=crop&w=1200&q=60",
+    description: "Roasted eggplant halves filled with herbed quinoa, tomatoes, and olives, baked until tender.",
+    ingredients: [
+      "2 medium eggplants, halved lengthwise",
+      "2 tbsp (30 ml) olive oil (divided)",
+      "1/2 tsp salt + pepper",
+      "3/4 cup (135 g) quinoa, rinsed",
+      "1 1/2 cups (360 ml) water",
+      "1 cup (150 g) cherry tomatoes, quartered",
+      "1/3 cup (50 g) kalamata olives, sliced",
+      "2 tbsp chopped parsley",
+      "1 tsp dried oregano",
+      "1 tbsp (15 ml) lemon juice"
+    ],
+    materials: [
+      "Baking sheet",
+      "Small saucepan with lid",
+      "Spoon (for scooping)",
+      "Mixing bowl"
+    ],
+    alternatives: [
+      "Use rice instead of quinoa",
+      "Add 1/4 cup toasted pine nuts",
+      "Stir in 2 tbsp vegan feta crumbles if desired"
+    ],
+    tips: "Score eggplant flesh to help it roast evenly and accept seasoning.",
+    steps: [
+      "Heat oven to 425°F (220°C). Score eggplant flesh in a crosshatch (avoid piercing skin). Brush with 1 tbsp oil; season with 1/4 tsp salt and pepper. Roast cut-side up 25–30 minutes until very tender.",
+      "Meanwhile, cook quinoa with water and 1/4 tsp salt: bring to boil, cover, simmer 15 minutes; rest 5 minutes and fluff.",
+      "Combine quinoa, tomatoes, olives, parsley, oregano, lemon juice, and remaining 1 tbsp oil.",
+      "Scoop some eggplant flesh to create a shallow cavity; chop and stir into filling. Spoon filling into eggplant halves and bake 8–10 minutes more."
+    ]
+  },
+  {
+    title: "Rainbow Buddha Bowls with Lemon–Tahini Dressing",
+    meal: "Lunch",
+    servings: 4,
+    prepTime: "20 minutes",
+    cookTime: "25 minutes",
+    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=60",
+    description: "Colorful bowls with roasted veggies, greens, grains, and a zesty tahini dressing.",
+    ingredients: [
+      "2 cups (300 g) cooked brown rice or quinoa",
+      "2 cups (280 g) sweet potato, 3/4 in (2 cm) cubes",
+      "1 head broccoli, cut into florets",
+      "1 tbsp (15 ml) olive oil",
+      "1/2 tsp salt",
+      "2 cups (60 g) mixed greens",
+      "1 avocado, sliced",
+      "DRESSING: 1/4 cup (60 ml) tahini, 2 tbsp (30 ml) lemon juice, 1 tbsp maple syrup, 2–4 tbsp warm water, 1/4 tsp salt"
+    ],
+    materials: [
+      "Baking sheet",
+      "Mixing bowls",
+      "Whisk",
+      "Knife and cutting board"
+    ],
+    alternatives: [
+      "Use cauliflower instead of broccoli",
+      "Add roasted chickpeas for protein",
+      "Greens can be kale or spinach"
+    ],
+    tips: "Roast vegetables on separate halves of the pan if their cook times differ; pull broccoli early if needed.",
+    steps: [
+      "Heat oven to 425°F (220°C). Toss sweet potato and broccoli with oil and 1/2 tsp salt; spread on sheet. Roast 20–25 minutes, stirring once.",
+      "Whisk dressing until smooth, thinning with warm water to drizzle.",
+      "Divide grains into 4 bowls. Add greens, roasted vegetables, and avocado. Drizzle with dressing and serve."
+    ]
+  },
+  {
+    title: "Vegan Shepherd’s Pie (Lentil & Mushroom)",
+    meal: "Dinner",
+    servings: 6,
+    prepTime: "20 minutes",
+    cookTime: "45 minutes",
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1200&q=60",
+    description: "Deeply savory lentil–mushroom filling under a cloud of creamy mashed potatoes, baked until golden.",
+    ingredients: [
+      "2 tbsp (30 ml) olive oil",
+      "1 onion, diced",
+      "2 carrots, diced",
+      "2 celery ribs, diced",
+      "10 oz (280 g) mushrooms, chopped",
+      "3 garlic cloves, minced",
+      "1 tbsp (16 g) tomato paste",
+      "1 tsp dried thyme",
+      "1 cup (200 g) dry green or brown lentils, rinsed",
+      "2 1/2 cups (600 ml) vegetable broth",
+      "1 tbsp (15 ml) soy sauce",
+      "1 cup (150 g) frozen peas",
+      "Salt and pepper",
+      "TOPPING: 2 lb (900 g) potatoes, peeled and cubed; 1/2 cup (120 ml) warm plant milk; 2 tbsp (28 g) vegan butter; 1/2 tsp salt"
+    ],
+    materials: [
+      "12 in (30 cm) skillet or Dutch oven",
+      "2–3 qt baking dish",
+      "Saucepan for potatoes",
+      "Masher",
+      "Wooden spoon"
+    ],
+    alternatives: [
+      "Use mashed cauliflower–potato mix for lighter topping",
+      "Add 1 tbsp balsamic vinegar for depth",
+      "Gluten-free tamari"
+    ],
+    tips: "Dry the mash slightly by steaming off excess moisture before adding milk and butter to prevent a watery top.",
+    steps: [
+      "Boil potatoes in salted water until tender, 12–15 minutes. Drain; return to pot and sit 1 minute to steam-dry. Mash with warm milk, vegan butter, and 1/2 tsp salt.",
+      "Meanwhile heat oil in skillet over medium. Sauté onion, carrot, and celery 6 minutes. Add mushrooms; cook 6 minutes until browned.",
+      "Stir in garlic, tomato paste, and thyme; cook 1 minute.",
+      "Add lentils, broth, soy sauce, 1/2 tsp salt, and pepper. Simmer 25 minutes, partially covered, until lentils are tender and mixture is saucy. Stir in peas.",
+      "Spread filling in baking dish. Top evenly with mashed potatoes; rough up surface with a fork for browning.",
+      "Bake at 400°F (205°C) for 20 minutes until bubbling and golden at peaks. Rest 10 minutes before serving."
+    ]
+  }
+);
+// --- end add-on batch #1 ---
+</script>
